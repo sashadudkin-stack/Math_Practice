@@ -13,28 +13,50 @@ for q_number in range(1, q_number + 1):
 #RNG
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
-#Solve
-#Addition
-print(f"{num1} + {num2} =?")
-ans_add = num1 + num2
-userAns_add = int(input())
-#subtraction
-print(f"{num1} - {num2} =?")
-ans_sub = num1 - num2
-userAns_sub = int(input())
-#multiplication
-print(f"{num1} * {num2} =?")
-ans_mul = num1 * num2
-userAns_mul = int(input())
-#division
-print(f"{num1} / {num2} =?")
-ans_div = num1 / num2
-userAns_div = int(input())
+    #Solve
+    #Addition
+    if chose==1:
+        print(f"{num1} + {num2} =?")
+        ans_add = num1 + num2
+        userAns_add = int(input())
+        if userAns_add == ans_add:
+            print("Correct!")
+        else:
+            print("Nope")
+    #subtraction
+    elif chose==2:
+        print(f"{num1} - {num2} =?")
+        ans_sub = num1 - num2
+        userAns_sub = int(input())
+        if userAns_sub == ans_sub:
+            print("Correct!")
+        else:
+            print("Nope")
+    #multiplication
+    elif chose==3:
+        print(f"{num1} * {num2} =?")
+        ans_mul = num1 * num2
+        userAns_mul = int(input())
+        if userAns_mul == ans_mul:
+            print("Correct!")
+        else:
+            print("Nope")
+    #division
+    elif chose==4:
+        print(f"{num1} / {num2} =?")
+        ans_div = num1 / num2
+        userAns_div = int(input())
+        if userAns_div == ans_div:
+            print("Correct!")
+        else:
+            print("Nope")
 
-if userAns_add == ans_add:  print("Correct!")
-else:   print("Nope")
-if userAns_sub == ans_sub:  print("Correct!")
-else:   print("Nope")
-if userAns_mul == ans_mul:  print("Correct!")
-else:   print("Nope")
-if userAns_div == ans_div:  print("Correct!")
+    # if userAns_add == ans_add:  print("Correct!")
+    # else:   print("Nope")
+    # if userAns_sub == ans_sub:  print("Correct!")
+    # else:   print("Nope")
+    # if userAns_mul == ans_mul:  print("Correct!")
+    # else:   print("Nope")
+    # if userAns_div == ans_div:  print("Correct!")
+    # else:
+    #     print("Nope")
